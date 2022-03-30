@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+  <head>
+    
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+    <title> Home | Code.me </title>
+
+    <!-- Fonte --> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap --> 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- CSS --> 
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Awesome --> 
+    <script src="https://kit.fontawesome.com/81378b3794.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Scripts --> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"> </script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"> </script>
+  
+  </head>
+  
+  <body>
+
+    <header>
+
+      <!-- Barra de navegação fixa (menu fixo) -->
+
+      <nav class="fixed-top navbar navbar-expand-sm navbar-dark" >
+        
+        <!-- Logo -->
+        
+        <a class="navbar-brand mr-0 font-weight-bold" href="#"> 
+
+          <img src="img/logo.svg" alt="Code.me" width="80px;" height="80px;">  code.me 
+
+        </a>
+
+        <!-- Links -->
+    
+        <ul class="navbar-nav">
+      
+          <li class="nav-item">
+        
+            <a class="nav-link font-weight-bold" href="#"> Home  </a>
+      
+          </li>
+      
+          <li class="nav-item">
+        
+            <a class="nav-link font-weight-bold" href="#"> Sobre nós </a>
+      
+          </li>
+
+          <li class="nav-item">
+        
+            <a class="nav-link font-weight-bold" href="#"> Blog </a>
+      
+          </li>
+
+          <!-- Dropdown -->
+        
+          <li class="nav-item dropdown">
+            
+            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbardrop" data-toggle="dropdown" style="border: none;"> Competições </a>
+         
+              <div class="dropdown-menu">
+                
+                <a class="dropdown-item" href="#" style="border-radius: 10px 10px 0px 0px"> Calendário </a>
+          
+                <a class="dropdown-item" href="#"> Conheça </a>
+          
+                <a class="dropdown-item" href="#" style="border-radius: 0px 0px 10px 10px"> Aprenda </a>
+              
+              </div>
+          
+          </li> 
+
+          <li class="nav-item">
+        
+            <a class="nav-link font-weight-bold" href="#"> Contato </a>
+      
+          </li>
+          
+        </ul> 
+
+        <a id="login" href="#"> LOGIN </a>
+
+      </nav> 
+
+    </header>
+
+    <!-- Cabeçalho --> 
+
+    <section class="jumbotron">
+
+        <!-- Texto --> 
+        <div class="margin"> 
+
+          <h1 class="título"> Nós te preparamos para <br> competições de programação <br> de forma 
+          <span class="span1"> 100% gratuita </span> </h1>
+
+             <img src="img/computador.svg" id="computador">
+
+          <p class="descrição"> Code.me é uma plataforma de preparação olímpica que te <br> dá acesso a cursos de programação gratuitos. Venha aprender! </p>
+
+        </div>
+
+        <!-- Botão --> 
+
+        <a href="#" id="comece"> Comece aqui </a>
+
+        <!-- Onda do background --> 
+
+        <svg style="margin-top: -80px;" width="100%" viewBox="0 0 1500 180"fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-8.86484 63.745C-8.86484 63.745 -2.4603 105.132 257.566 80.8908C517.592 56.6502 726.381 -77.5602 1051.1 63.745C1375.8 205.05 1534 144.153 1534 144.153L1501.98 237L-30 204.483" fill="white"/> </svg>
+
+    </section>
+    
+    <!-- Pagina "Sobre nós"-->
+    <section id="SobreNós" class="mt-5">
+      <!-- Titulo -->
+        <div class="p-0 ml-5 pl-5 container">
+          <h1 class="mb-4 pt-5 font-weight-bold color-azul">Sobre nós</h1>
+        
+        <!--Bloco da missão e oferecemos -->
+        <div class=" p-0 pt-2">
+          <div class="card-deck">
+            <div class="text-center card col-xl-3 col-lg-3 col-md-4 col-sm-5 mt-auto" id="missão">
+              <div class="card-header bg-white border-0 p-0"><h2 class="m-1 p-3 card-subtitle color-azul">Missão</h2></div>
+              <div class="card-body pt-0">
+                <p>A missão da <strong>Code.me</strong> é democratizar o acesso à programação competitiva, levando treinamentos de alta qualidade para todos. Além disso, nós também temos o intuito de conectar desenvolvedores de vários lugares através de nossa comunidade.</p>
+              </div>
+            </div>
+            
+            <!-- O que oferecemos -->
+            <div class="p-0 mt-auto col-xl-2 col-md-3 mt-auto col-5 card" id="oferecemos">
+              <div class="card-header bg-white p-0 border-0">
+                <h2 class="color-azul">Oferecemos</h2>
+              </div>
+              <div class="card-body p-0 m-0 pt-2">
+                <!-- tudo que oferecemos -->
+                <p><i class="fas fa-check"></i> Vídeo-aulas</p>
+                <p><i class="fas fa-check"></i> Guias de estudo</p>
+                <p><i class="fas fa-check"></i> Exercícios</p>
+                <p><i class="fas fa-check"></i> Calendário</p>
+                <p><i class="fas fa-check"></i> Comunidade</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <object data="img/Ilustração.svg" class="position-absolute img-right"></object>
+    </section>
+
+    <!--Aprenda com nossos cursos-->
+    <section id="Cursos">
+      <!-- alinhamento conteiner -->
+      <div class="container">
+        <!-- coloco minha formatação  css  -->
+        <h1 class="color-azul">Aprenda com nossos cursos</h1>
+      </div>
+      <div class="container">
+        <!-- card deck para alinhas eles em grids -->
+        <div class="card-deck">
+          <!-- cads para dar tamanho -->
+          <div class="card StyleBorder m-0 p-0 CardHeightCursos mr-auto">
+            <!-- gradiente de dentro tudo feito a mão  -->
+            <div class="StyleBackground CardBorderCursos">
+              <!-- alinha imgs ao centro/ card de imagem -->
+              <div class="card-img ImageCardCursos d-flex justify-content-center">
+                <!-- puxo o icone -->
+                <img src="https://img.icons8.com/color/480/000000/javascript.png"/>
+              </div>
+              <!-- corpo do card -->
+              <div class="card-body text-center p-0 m-0 col-12">
+                <div >
+                  <!-- icones de esrtela -->
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star borda"></i>
+                </div>
+                <div>
+                  <!-- titulo de um card -->
+                  <h1 class="card-title p-0 m-0 col-12 pl-5">Curso javascript</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- cads para dar tamanho -->
+          <div class="card StyleBorder m-0 p-0 CardHeightCursos mr-auto">
+            <!-- gradiente de dentro tudo feito a mão  -->
+            <div class="StyleBackground CardBorderCursos">
+              <!-- alinha imgs ao centro/ card de imagem -->
+              <div class="card-img ImageCardCursos d-flex justify-content-center">
+                <!-- puxo o icone -->
+                <img src="https://img.icons8.com/officel/480/000000/ruby-programming-language.png"/>
+              </div>
+              <!-- corpo do card -->
+              <div class="card-body text-center p-0 m-0 col-12">
+                <div >
+                  <!-- icones de esrtela -->
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star borda"></i>
+                </div>
+                <div>
+                  <!-- titulo de um card -->
+                  <h1 class="card-title p-0 m-0 col-12">Curso Ruby</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- cads para dar tamanho -->
+          <div class="card StyleBorder m-0 p-0 CardHeightCursos mr-auto">
+            <!-- gradiente de dentro tudo feito a mão  -->
+            <div class="StyleBackground CardBorderCursos">
+              <!-- alinha imgs ao centro/ card de imagem -->
+              <div class="card-img ImageCardCursos d-flex justify-content-center">
+                <!-- puxo o icone -->
+                <img src="https://img.icons8.com/color/480/000000/python.png"/>
+              </div>
+              <!-- corpo do card -->
+              <div class="card-body text-center p-0 m-0 col-12">
+                <div >
+                  <!-- icones de esrtela -->
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star borda"></i>
+                </div>
+                <div>
+                  <!-- titulo de um card -->
+                  <h1 class="card-title p-0 m-0 col-12">Curso Phyton</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Depoimentos-->
+    <div class="aindaNãoFeito">
+    </div>
+
+    <!-- Olimpiadas -->
+    <div id="Olimpiadas">
+      <div>
+          <!-- Imagem de fundo -->
+          <div>
+              <object data="img/BackgroundOlimpiadaTop.svg" id="ImagemTopOlimp"></object>
+          </div>
+          
+          <!-- Titulo -->
+          <div  class="container pb-5 text-center">
+            <h1 class="color-azul font-weight-bold">Fique por dentro do mundo olímpico!</h1>
+          </div>
+      </div>
+      
+      <!-- Carrosssel -->
+      <div id="fotos" class="carousel slide w-75 container" data-ride="carousel">
+        
+        <!-- indicadores -->
+        <ol class="carousel-indicators">
+          <li data-target="#fotos" data-slide-to="0" class="active"></li>
+          <li data-target="#fotos" data-slide-to="1"></li>
+          <li data-target="#fotos" data-slide-to="2"></li>
+          <li data-target="#fotos" data-slide-to="3"></li>
+        </ol>
+        
+        <!-- imagens do carrossel -->
+        <div class="carousel-inner carrossel">
+            <div class="carousel-item active"><img class="d-block w-100 image" src="https://unsplash.it/1600/400?image=950"/></div>
+            <div class="carousel-item"><img class="d-block w-100 image" src="https://unsplash.it/1600/400?image=960"/></div>
+            <div class="carousel-item"><img class="d-block w-100 image" src="https://unsplash.it/1600/400?image=990"/></div>
+            <div class="carousel-item"><img class="d-block w-100 image" src="https://unsplash.it/1600/400?image=970"/></div>
+        </div>
+        
+        <!-- botão para img anterior-->
+        <a class="carousel-control-prev" href="#fotos" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        
+        <!-- botão para próxima img -->
+        <a class="carousel-control-next" href="#fotos" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+
+      
+      <!-- Saiba mais -->
+      <div class="container mt-4">
+        <!-- titulo -->
+        <div>
+          <h2 class="color-azul">Saiba mais</h2>
+        </div>
+        <!-- cards -->
+        <div class="card-deck">
+
+          <div class="card shadow-lg bg-white Cursos">
+            
+          </div>
+
+          <div class="card shadow-lg bg-white Cursos">
+            
+          </div>
+
+          <div class="card shadow-lg bg-white Cursos">
+            
+          </div>
+        </div>
+        <!-- ver mais -->
+        <div class="mt-2 row mb-0 p-0 text-right mr-2">
+          <div class="ml-auto p-0 col-4 col-sm-3 col-xl-2">
+            <a href="#" class="link">Ver mais
+              <i class="fas fa-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- equipe -->
+  <div id="Equipe">
+    <img src="img/BackgroundEquipe.svg" class="w-100 position-relative" />
+    <div class=" position-absolute" id='alinhamento'>
+      <div class="container text-center" id="margin">
+        <h1 class="h1 font-weight-bold">Conheça nossa equipe!</h1>
+      </div>
+      <!-- Equipe com as fotos -->
+        <div class="d-block">
+            <!--
+
+                grupo 1
+
+            -->
+            <div class="card-deck d-flex justify-content-between mb-4">
+                <!--membro 1-->
+                <div class="card StyleBorder" id="largura">
+                    <div class="StyleBackground text-center">
+                        <div class="card-header border-0">
+                            <h5>Nome</h5>
+                        </div>
+                        <div class="card-body p-0 py-3 d-flex justify-content-center">
+                            <div class="w-100 d-flex justify-content-center">
+                                <img src="https://picsum.photos/id/237/536/354" class="StyleBorder tamanho">
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between border-0">
+                            <h5>Função</h5>
+                            <a href="">
+                                <i class="fas fa-angle-double-right branco"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--membro 2-->
+                <div class="card StyleBorder" id="largura">
+                    <div class="StyleBackground text-center">
+                        <div class="card-header border-0">
+                            <h5>Nome</h5>
+                        </div>
+                        <div class="card-body p-0 py-3 d-flex justify-content-center">
+                            <div class="w-100 d-flex justify-content-center">
+                                <img src="https://picsum.photos/id/1062/367/267"  class="StyleBorder tamanho">
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between border-0">
+                            <h5>Função</h5>
+                            <a href="">
+                                <i class="fas fa-angle-double-right branco"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+
+                grupo 2
+
+            -->
+            <div class="card-deck">
+                <!--membro 1-->
+                <div class="card StyleBorder w-50">
+                    <div class="StyleBackground text-center">
+                        <div class="card-header border-0">
+                            <h5>Nome</h5>
+                        </div>
+                        <div class="card-body p-0 py-3 d-flex justify-content-center">
+                            <div class="w-100 d-flex justify-content-center">
+                                <img src="https://th.bing.com/th/id/OIP.tkvYWdYYfYmwRY5mX4v7jgHaEr?pid=Api&rs=1" class="StyleBorder tamanho">
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between border-0">
+                            <h5>Função</h5>
+                            <a href="">
+                                <i class="fas fa-angle-double-right branco"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--membro 2-->
+                <div class="card StyleBorder w-50">
+                    <div class="StyleBackground text-center">
+                        <div class="card-header border-0">
+                            <h5>Nome</h5>
+                        </div>
+                        <div class="card-body p-0 py-3 d-flex justify-content-center">
+                            <div class="w-100 d-flex justify-content-center">
+                                <img src="https://th.bing.com/th/id/OIP.kNzGNqohjh0Xc8iYT6v-IwHaFj?pid=Api&rs=1" class="StyleBorder tamanho">
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between border-0">
+                            <h5>Função</h5>
+                            <a href="">
+                                <i class="fas fa-angle-double-right branco"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--membro 3-->
+                <div class="card StyleBorder w-50">
+                    <div class="StyleBackground text-center">
+                        <div class="card-header border-0">
+                            <h5>Nome</h5>
+                        </div>
+                        <div class="card-body p-0 py-3 d-flex justify-content-center">
+                            <div class="w-100 d-flex justify-content-center">
+                                <img src="https://filmdaily.co/wp-content/uploads/2020/05/crying-cat-meme-lede.jpg" class="StyleBorder tamanho">
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between border-0">
+                            <h5>Função</h5>
+                            <a href="">
+                                <i class="fas fa-angle-double-right branco"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--membro 4-->
+                <div class="card StyleBorder w-50">
+                    <div class="StyleBackground text-center">
+                        <div class="card-header border-0">
+                            <h5>Nome</h5>
+                        </div>
+                        <div class="card-body p-0 py-3 d-flex justify-content-center">
+                            <div class="w-100 d-flex justify-content-center">
+                                <img src="https://cdn.dicionariopopular.com/imagens/meme-da-mulher-gritando-com-o-gato-na-mesa-og.jpg" class="StyleBorder tamanho">
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between border-0">
+                            <h5>Função</h5>
+                            <a href="">
+                                <i class="fas fa-angle-double-right branco"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+
+                grupo 3
+
+            --> 
+            <div class="card-deck d-flex justify-content-between mt-4">
+                <!--membro 1-->
+                <div class="card StyleBorder" id="largura">
+                    <div class="StyleBackground text-center">
+                        <div class="card-header border-0">
+                            <h5>Nome</h5>
+                        </div>
+                        <div class="card-body p-0 py-3 d-flex justify-content-center">
+                            <div class="w-100 d-flex justify-content-center">
+                                <img src="https://picsum.photos/id/659/2731/" class="StyleBorder tamanho">
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between border-0">
+                            <h5>Função</h5>
+                            <a href="">
+                                <i class="fas fa-angle-double-right branco"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--membro 2-->
+                <div class="card StyleBorder" id="largura">
+                    <div class="StyleBackground text-center">
+                        <div class="card-header border-0">
+                            <h5>Nome</h5>
+                        </div>
+                        <div class="card-body p-0 py-3 d-flex justify-content-center">
+                            <div class="w-100 d-flex justify-content-center">
+                                <img src="https://picsum.photos/id/718/367/267" class="StyleBorder tamanho">
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between border-0">
+                            <h5>Função</h5>
+                            <a href="">
+                                <i class="fas fa-angle-double-right branco"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <!--Footer-->
+    <footer>
+      <div class="ml-5 pl-5">
+        <div class="row">
+          <div class="col-lg-4">
+            <h2 id="contate-nos">Contate-nos</h2>
+            <form class="mt-3">
+              <div class="form-group">
+                <label for="exampleInputText">Seu nome</label>
+                <input type="text" class="form-control" id="exampleInputText" required aria-describedby="emailHelp" placeholder="Digite seu nome..."> 
+                <!-- Textual form controls—like <input>s, <select>s, and <textarea>s—are styled with the .form-control class. -->
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Seu melhor e-mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" required placeholder="nome@exemplo.com" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Escreva sua mensagem</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Digite aqui sua mensagem..."></textarea>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button id="msg-submit"type="submit" class="btn btn-primary mb-5">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-2 redes-sociais d-flex justify-content-center align-items-center">
+            <ul>
+              <li style="text-shadow: 0px 4.68817px 4.68817px rgba(0, 0, 0, 0.25)">Redes Sociais</li>
+              <li><span><i class="fab fa-twitter m-2 mt-3"></i></span><a href="#">Twitter</a></li>
+              <li><span><i class="fab fa-linkedin m-2"></i></span><a href="#">Linkedin</a></li>
+              <li><span><i class="fab fa-instagram m-2"></i></span><a href="#">Instagram</a></li>
+              <li><span><i class="fab fa-facebook m-2"></i></span><a href="#">Facebook</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 d-flex justify-content-center align-items-center">
+            <ul>
+                <li style="text-shadow: 0px 4.68817px 4.68817px rgba(0, 0, 0, 0.25)">Navegue</li>
+                <li class="nav-itens"><a href="#">Home</a></li>
+                <li class="nav-itens"><a href="#">Sobre nós</a></li>
+                <li class="nav-itens"><a href="#">Blog</a></li>
+                <li class="nav-itens"><a href="#">Competições</a></li>
+                <li class="nav-itens"><a href="#">Contato</a></li>
+                <li class="nav-itens"><a href="#">Login</a></li>
+              </ul>
+          </div>
+          <div class="col-lg-4 col-sm-3 d-flex justify-content-center align-items-center">
+            <a href="#"><img src="img/logo.png"></a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center" style="border-top: 1px solid #FFF;">
+          <p class="m-0 mt-3" style="color: #FFF">© 2020 Copyright Code.me</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>

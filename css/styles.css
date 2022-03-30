@@ -1,0 +1,364 @@
+/* As classes, seletores e IDs estão organizados na ordem do HTML. */
+
+/* Abaixo eu zerei margin e padding (lembrando que quando não há a medida, significa que é px (pixels).
+Em suma, este seletor altera todo o escopo da página, visto que é considerado universal. */
+
+* { 
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+/* Indiquei abaixo o tamanho da fonte (16 pixels), que no caso seria o padrão do HTML, para todo o corpo do site.
+A fonte é a Poppins, porém pode ser substituída pela Roboto. Em suma, este seletor altera a tag <body> do 
+site */
+
+body { 
+
+	font-size: 16px;
+
+	font-family: "Poppins", "Roboto", sans-serif;
+
+}
+
+
+/* Início do menu. 
+
+Modifiquei abaixo a margem como um todo (superior, inferior, esquerda e direita) da barra de navegação e
+coloquei o peso da fonte como bold (ou seja, qualquer texto da navbar ficará em negrito). 
+Finalmente, zerei o padding para consertar o espaçamento desigual entre a logo e os links e
+entre os links e o botão de login.
+Em suma, esta classe altera a barra de navegação em sua totalidade. */
+
+.navbar { 
+
+	width: 100%;
+
+	margin: 0em;
+
+	font-weight: bold;
+
+	padding: 0em;
+
+	background-color: white;
+
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+/* Indiquei abaixo a cor do texto da logo da página, alterei o 
+tamanho da fonte, o espaçamento superior e inferior, e também zerei a 
+margin-right para que os links ficassem centralizados. Em suma, esta classe altera a logomarca do site. */
+
+.navbar-brand { 
+
+	color: #5C5C5C;
+
+	font-size: 16px;
+
+	padding-top: 0em;
+
+	padding-bottom: 0em;
+
+	margin-left: 30px;
+
+}
+
+/* Quando passa o mouse pela logo, a cor do texto não é alterada. Ou seja, modifiquei o padrão do 
+Bootstrap que altera a cor no estado "hover". */ 
+
+.navbar-brand:hover { 
+
+	color:  #5C5C5C;
+
+}
+
+/* Afastei abaixo a lista não-ordenada da logomarca da página. Em suma, esta classe dá suporte a um menu
+secundário dropdown e, neste caso, permite a alteração da lista não-ordenada que compõe a barra de 
+navegação. */
+
+/* Aqui eu alterei a cor padrão do texto da logomarca, dentro do tema escuro do Bootstrap. */
+
+.navbar-dark .navbar-brand {
+  
+  	color:  #5C5C5C;
+
+}
+
+/* Aqui eu alterei a cor padrão do modo hover da logomarca, dentro do tema escuro do Bootstrap. */
+
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+  
+  color:  #5C5C5C;
+
+}
+
+.navbar-nav { 
+
+	margin: 0px auto;
+
+}
+
+/* Aqui aproveitei a classe "nav-item" do Boostrap e alterei o espaçamento entre as tags <li> da 
+barra de navegação. Em suma, esta classe altera os itens <li> da navbar. */
+
+.nav-item { 
+
+ 	margin: 0em 2em;
+
+}
+
+/* Alterei a cor dos links da barra de navegação. Em suma, esta classe altera links de qualquer barra
+de navegação, não precisando ser necessariamente um menu. */
+
+.nav-link  { 
+
+	color: #5C5C5C;
+
+}
+
+/* Aqui eu altero a cor dos links dentro do tema dark. */
+
+.navbar-dark .navbar-nav .nav-link {
+
+  color:  #5C5C5C;
+
+}
+
+/* Indicador. */
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+
+  color: blue;
+  border-bottom: solid #220E75 3px;
+  padding: 3;
+
+}
+
+/* Links desabilitados (páginas nas quais você não está) ficam desta cor. */
+
+.navbar-dark .navbar-nav .nav-link.disabled {
+    color:  #5C5C5C;
+}
+
+/* Links ativos ficam desta cor. */ 
+
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+
+  color: blue;
+
+}
+
+/* Aqui eu alterei a borda do contêiner no qual os links do sub-menu do link "Competições" ficam. 
+Além disso, deixei as bordas arredondadas, zerei o espaçamento superior e inferior. */
+
+.dropdown-menu {
+  
+  	border: 1px solid #EEEEEE;
+  
+  	border-radius: 10px;
+  
+  	padding-top: 0px;
+  
+  	padding-bottom: 0px;
+
+} 
+
+/* Quando passa o mouse em "Competições", o sub-menu é aberto. */
+
+.dropdown:hover .dropdown-menu {
+
+    display: block;
+    
+    position: absolute;
+    
+    top: 40px;
+    
+    left: 0px;
+    
+    will-change: transform;
+
+}
+
+/* Espaçamento dos itens do sub-menu. */
+
+
+.dropdown-item {
+
+  padding: 1rem 1.5rem;
+
+}
+
+/* Ao clicar no item do sub-menu e segurá-lo, o background torna-se azul. */
+
+.dropdown-item.active, .dropdown-item:active {
+ 
+  background-color: blue;
+
+}
+
+/* Aqui eu alterei o ícone do dropdown. Utilizei o FontAwesome.*/
+
+.dropdown-toggle::after {
+
+    display: inline-block;
+
+    font: normal 14px / 1 FontAwesome;
+    
+    font-size: inherit;
+    
+    text-rendering: auto;
+    
+    -webkit-font-smoothing: antialiased;
+    
+    -moz-osx-font-smoothing: grayscale;
+    
+    content: "\f078";
+    
+    border-top: 0;
+    
+    border-right: 0;
+    
+    border-bottom: 0;
+    
+    border-left: 0;
+    
+    vertical-align: 0;
+    
+    min-width: 16px;
+
+}
+
+/* Aqui eu ajustei o botão de login. */
+
+#login { 
+
+	background: linear-gradient(180deg, #220E75 0%, rgba(255, 255, 255, 0) 100%), #2400FF;
+	
+	border-radius: 100px;
+
+	color: white;
+
+	font-weight: bold;
+
+	padding: 15px 54px;
+
+	border: none;
+
+	text-decoration: none;
+
+	margin-right: 30px;
+
+}
+
+/* Fim do menu 
+
+Início do cabeçalho 
+
+Alterei o peso da fonte de parte do texto inicial. */ 
+
+.span1 { 
+
+ 	font-weight: bold;
+
+}
+
+/* Fiz o gradiente para o background, alterei determinados espaçamentos, coloquei 
+uma altura fixa no jumbotron (que é uma espécie de caixa adaptável) e também
+tirei o border-radius padrão do jumbotron. */
+
+.jumbotron { 
+
+	background: linear-gradient(180deg, #2400FF 0%, #220E75 100%);
+
+	margin-top: 60px;
+
+ 	border-radius: 0px;
+
+ 	padding-right: 0px;
+ 	
+ 	padding-left: 0px;
+ 	
+ 	height: 625px;
+ 	
+ 	width: 100%;
+
+}
+
+/* Modifiquei a cor do título da página. */
+
+.título { 
+
+color: white;
+
+}
+
+/* Modifiquei a cor da descrição do título da página. */
+
+.descrição { 
+
+  	color: white;
+
+}
+
+/* Utilizei um ID por ser um botão único. */
+
+#comece { 
+
+	background-color: white;
+
+	color: blue;
+
+	border-radius: 100px;
+
+	padding: 15px 30px;
+
+	border: none;
+
+	text-decoration: none;
+
+	font-weight: bold;
+
+	margin-top: 100px;
+
+	margin-left: 90px;
+
+}
+
+/* Alterei a margem esquerda e inferior do título e da descrição da página. */
+
+.margin { 
+
+margin-left: 90px;
+margin-bottom: 35px;
+
+}
+
+/* Utilizei um ID por ser uma imagem única. O "mix-blend-mode" basicamente
+altera a cor da imagem. Em relação às outras propriedades utilizadas, estas alteram
+o tamanho da imagem e seu posicionamento. */
+
+#computador {
+
+	background: url(—Pngtree—gradient isometric laptop mockup vector_5361953.png);
+	
+	mix-blend-mode: color-burn;
+	
+	margin-right: 130px;
+	
+	height: 520px;
+	
+	width: 520px;
+	
+	float: right; 
+	
+	margin-top: -200px;
+
+}
+

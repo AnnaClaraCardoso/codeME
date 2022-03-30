@@ -1,0 +1,371 @@
+/* Definiução para todos elementos usarem Poppins */
+html,body{
+    font-family: poppins!important;
+}
+
+
+
+/* pags ainda não feitas */ image
+.aindaNãoFeito{
+    height: 50vh;
+}
+
+
+
+/* formatando titulo e sub titulo*/
+    /* todos os h1 e h2 terão cor azul */
+    .color-azul{
+        color: #2400FF!important;
+    }
+    #SobreNós p{
+        color: black;
+    }
+    /* h1 terá fonte de 40px e em negrito */
+    h1{
+        font-size: 40px;
+    }
+    /* font de 30px e simi negrito */
+    h2{
+        font-size: 30px!important;
+        font-weight: 600;
+    }
+
+    /* fortando Sobre Nós */
+
+        /* puxo a imagem e defino sua posição no fundo */
+        #SobreNós{
+            height: 100vh;
+        }
+
+        /* deixo a caixa arredondada nas bordas */
+        #missão{
+            border-radius: 1rem;
+            border: 1px solid #5C5C5C;
+        }
+
+        #oferecemos{
+            border: none;
+        }
+            
+        /* o cheked do "Oferecemos" será azul */
+        .fa-check{
+            color: #220E75;
+        }
+        .img-right{
+            right: 0;
+            top: 100%;
+        }
+
+    /* Formatando Omlimpiadas */
+        /* imagem do topo*/
+        #ImagemTopOlimp{
+            width: 100%;
+            height: 64vh;
+        }
+
+        /* Ajuste da div pai do carrossel de img */
+        #fotos{
+            height: 70vh;
+        }
+        /* ajustabndo os imagens do carrossel */
+        .image{
+            height: 70vh;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        .carousel-indicators li{
+            width: 10px!important;
+            height: 10px !important;
+            border-radius: 50% !important;
+        }
+
+        /*ajustando bordas do carrossel*/
+        .OBject{
+            width: 60%;
+            height: 80%;
+            object-fit: cover;
+        }
+        .OBject img{
+            width: 60%;
+            height: 100%;
+        }
+        .cover{
+            object-fit: cover;
+            height: 100%!important;
+        }
+        
+        /* formato do link de ver mais a baixo dos cards */
+        .link{
+            color: #2400FF!important;
+            font-size: 20px;
+            text-decoration: none!important;
+        }
+        /* colocando sobras nos cards*/
+        .Cursos{
+            /*box-shadow: 0.5em 0.6em 1.5em 0em rgb(155, 155, 155);*/
+            border-radius: 15px !important;
+            height: 30vh;
+        }
+
+
+
+    /* FORMATANDO  CURSOS */
+        .fa-star{
+            color: #220E75;
+        }
+        .branco{
+            color:#220E75;
+        }
+        .CardHeightCursos div div img{
+            height: 70%;
+        }
+        .ImageCardCursos{
+            height: 50%;
+            width: 100%;
+        }
+        .CardHeightCursos{
+            height: 20em;
+            width: 80vw;
+            margin-left: 2em !important;
+        }
+        .CardBorderCursos{
+            height: 100%;
+            width: 100%;
+        }
+
+    /* Formatando Equipe */
+
+        /* Determinei que todas as palavras escritas sejam brancas */
+        #Equipe{
+            color: white!important;
+        }
+        /* altura da imagem */
+        #Equipe object{
+            height: 100%;
+        }
+
+        /* titulo do Conheça nossa equipe */
+        .h1{
+            color: white!important;
+        }
+
+        /* aplico margem para que as imgs e titulo  */
+        #margin{
+            margin-top: -165vh ;
+            margin-bottom: 10vh;
+        }
+
+        /* centralixar os cards */
+        #alinhamento{
+            left: 8vw;
+            right: 8vw;
+        }
+        #largura{
+            width: 23% !important;
+            flex: none;
+            height: 100%;
+        }
+        /* Borda dos cards e arredondamento*/
+        .StyleBorder{
+            background: linear-gradient( rgb(36,0,255),rgb(255, 255, 255),rgb(0,194,255));
+            padding: 5px !important;
+            border-radius: 15px !important;
+            border: none!important;
+        }
+
+        /* Cor de fundo dos cards e arrendoamento */
+        .StyleBackground{
+            background: linear-gradient(rgb(0,194,255), rgb(36,0,255));
+            border-radius: 10px;
+        }
+        /* Tiro o background deles */
+        .card-header, .card-footer{
+            background: none !important;
+        }
+        /* tamanho da imagem dentro dos cards*/
+        .tamanho{
+            height: 9em;
+            width: 50%;
+            object-fit: cover;
+            border-radius: 50%!important;
+        }
+        /* setinha das img*/
+        .branco{
+            color: white;
+        }
+        
+/* quando a largura cfor menor que 1200px faça */
+@media(max-width: 1200px){
+    /* imagem do topo de Ompiadas*/
+    #ImagemTopOlimp{
+        height: 48vh;
+    }
+    /* tamanho do card e sobra */
+    .OBject{
+        height: 100%;
+    }
+    /* o tamanho da imagem vai para 100% */
+    .OBject img{
+        width: 60%;
+        height: 60%;
+    }
+    /* Tamanho dos cursos  */
+    .Cursos{
+        height: 40vh;
+    }
+    /* imagem dos cards da "Equipe"*/
+    .tamanho{
+        height: 6em;
+    }
+    /* iamgem da Sobre nós */
+    .img-right{
+        z-index: -1;
+        bottom: 0;
+        width: 42%;
+    }
+    /* alinhamento na vertical dos cards de Equipe */
+    #margin{
+        margin-top: -110vh;
+        margin-bottom: 1vh;
+    }
+    /* tamanho do titulo de Equipe */
+    .h1{
+        font-size: 1.5rem;
+    }
+    .cover{
+        height: 70% !important;
+    }
+}
+
+@media(max-width: 800px){
+    /* tamanho do card */
+    .Cursos{
+        height: 30vh;
+    }
+    .OBject{
+        height: 60%;
+    }
+    /* titulo do carda dos cursos */
+    .card-title{
+        font-size: 1.8rem;
+    }
+    /* imagem do topo de Ompiadas*/
+    #ImagemTopOlimp{
+        height: 30vh;
+    }
+    /* imagem dos cards */
+    .OBject img{
+        height: 50%;
+        width: 50%;
+    }
+    
+    #largura{
+        width: 21% !important;
+    }
+    .cover{
+        height: 70% !important;
+    }
+}
+
+@media(max-width: 700px){
+    /* Card tamanho do titulo */
+    .card-title{
+        font-size: 1.8rem;
+    }
+    /* tamnanho da iamgem  */
+    .tamanho{
+        height: 5em;
+    }
+    .alinhamento{
+        left: 2vw;
+        right: 2vw;
+    }
+}
+
+
+@media(max-width: 579px){
+    .img-right{
+        top: 150vh;
+    }
+    
+    /* cards altura */
+    .Cursos{
+        height: 50vh;
+    }
+    .OBject{
+        height: 100%;
+    }
+    /* texto dos cards abaixo de olimpiadas */
+    .text-bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* largura dos cards */
+    #largura{
+        width: 50% !important;
+    }
+    .cover{
+        height: 50%;
+    }
+    .CardHeightCursos{
+        display: block;
+    }
+}
+/*
+Footer
+*/
+h1, h2, h3, p, a, li, button, label {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: #FFF;
+  }
+a {
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  li {
+    font-weight: 600;
+    color: #00C2FF;
+    list-style: none;
+  }
+
+  footer {
+    background-color: #220E75;
+    padding: 20px;
+  }
+
+  #contate-nos {
+    font-weight: bold;
+    text-shadow: 0px 4.68817px 4.68817px rgba(0, 0, 0, 0.25);
+  }
+
+  span {
+    font-size: 1.3em;
+  }
+
+  .nav-itens {
+    margin-top: 2vh;
+  }
+
+  .col-sm-3 {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  #msg-submit {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #00C2FF 100%), #2400FF;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 100px;
+    width: 10vw;
+  }
+
+  #exampleInputEmail1:valid {
+    border: 1px solid black;
+  } 
+  
